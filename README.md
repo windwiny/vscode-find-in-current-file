@@ -19,3 +19,6 @@ Search only in current file displayed in the active editor.  Automatically, the 
 ```
 ## Contribution
 Mac users are much welcomed to test and raise PR.
+
+## Credit
+Forked from great work https://github.com/shibayu36/vscode-search-in-current-file
