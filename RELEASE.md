@@ -1,9 +1,9 @@
 * `git checkout master && git pull`
-* Edit `version` in package.json.
-* `vsce package`
-* `code --install-extension find-in-current-file-x.y.z.vsix` and check the operation.
-* `git add package.json && git commit && git tag vx.y.z && git push && git push --tags`
-* `vsce publish --yarn`
+* Edit `version` in package.json, e.g. increase minor version by 1.
+* Build extension release package with `vsce package`
+* Install the extension locally with `code --install-extension find-in-current-file-x.y.z.vsix` and validate the extension is working as expected.
+* [Optional] Release the version in github with tags `git commit && git tag vx.y.z && git push && git push --tags`
+* Release the extension to vscode marketplace with `vsce publish --yarn`. You will be prompted for the marketplace token. Or you can publish directly with `vsce publish --yarn -p <token>`.
 
 Alternatively you can publish the extension via the marketplace web portal.
 * Login https://marketplace.visualstudio.com/vscode
