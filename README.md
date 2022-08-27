@@ -17,6 +17,10 @@ Search only in current file displayed in the active editor.  Automatically, the 
   "when": "editorFocus || editorIsOpen"
 }
 ```
+
+## How to Pubish to VS Code Marketplace
+Check [RELEASE.md](RELEASE.md)
+
 ## Contribution
 Mac users are much welcomed to test and raise PR.
 
