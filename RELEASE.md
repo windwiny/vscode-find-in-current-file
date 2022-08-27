@@ -1,4 +1,10 @@
-* `git checkout master && git pull`
+* Install [nodejs](https://nodejs.org/en/download/package-manager/) 
+* Install vsce
+```
+npm install --global vsce
+vsce -h # check
+```
+* Go into the folder of this repo, e.g. `cd vscode-find-in-current-file`
 * Edit `version` in package.json, e.g. increase minor version by 1.
 * Build extension release package with `vsce package`
 * Install the extension locally with `code --install-extension find-in-current-file-x.y.z.vsix` and validate the extension is working as expected.
