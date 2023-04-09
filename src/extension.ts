@@ -30,9 +30,11 @@ async function searchInCurrentFile(): Promise<void> {
     currentFilePath = path.basename(currentFilePath);
   }
 
+  let stxt=activeEditor.document.getText(activeEditor.selection);
+  stxt = stxt ? stxt : '';
   await vscode.commands.executeCommand("workbench.action.findInFiles", {
     // Fill-in selected text to query
-    query: activeEditor.document.getText(activeEditor.selection),
+    query: stxt,
     filesToInclude: currentFilePath,
   });
 }
